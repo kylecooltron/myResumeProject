@@ -3,3 +3,8 @@ body {
     background-image: url(images/waxwall.gif);
     background-color: lightblue;
 }
+
+/** @group clearfix **/
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+
