@@ -5,14 +5,19 @@
       resumeApp.config(function($routeProvider) {
         $routeProvider.
           when('/', {
-            template: 'This is my default index html file',
+            templateUrl: 'HomePage.html',
             controller: 'LandingPageCtrl'
           }).
           when('/:CodePage', {
-            templateUrl: 'http://kylecooltron.github.io/myResumeProject/hello.html',
+            templateUrl: 'hello.html',
             controller: 'CodePageCtrl'
           }).
           otherwise({
             redirectTo: '/'
           });
       });
+
+
+
+
+
